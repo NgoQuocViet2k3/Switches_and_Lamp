@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Lamp.js"></script>
+    <script src="SwitchButton.js"></script>
+</head>
+<body>
+<script>
+    let switchButton = new SwitchButton(false);
+    let lamp = new Lamp(false);
+    switchButton.connectToLamp(lamp);
+    for (let i = 0; i < 10; i++) {
+        switchButton.switchOn();
+        switchButton.switchOff();
+    }
+</script>
+</body>
+</html>
